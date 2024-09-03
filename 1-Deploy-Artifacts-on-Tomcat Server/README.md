@@ -25,8 +25,13 @@ To set up a Jenkins pipeline that performs the following actions:
 - **Maven** : Maven should be installed and accessible from Jenkins
 
 ### Jenkins Plugin Installation and Setup
+- **Java Setup**: 
+![image](https://github.com/user-attachments/assets/9bda1c58-ef34-4442-a4b3-92596e846d4c)
+
 - **GitHub Integration**: Jenkins needs to be configured to trigger builds automatically when a change is pushed to the GitHub repository. This can be done using the GitHub Webhook.
 - **Maven Integration**: Maven must be installed and configured in Jenkins.
+  ![image](https://github.com/user-attachments/assets/fa6666fc-da5c-44b8-b9ef-d832035ec21b)
+
 - **Credentials**: Credentials for GitHub and Tomcat should be configured in Jenkins.
 - **Pipeline: Stage View Plugin**: 
 - **Pipeline: Utility Steps Plugin** : it provides the findFiles step.
