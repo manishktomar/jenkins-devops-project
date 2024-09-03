@@ -1,19 +1,21 @@
 # Deploy Artifacts on a Tomcat Server
 This configuration ensures that Jenkins automatically triggers a build when code is pushed to GitHub, and the resulting .war file is deployed to your Tomcat server.
 
+![image](https://github.com/user-attachments/assets/0cfc0b54-673b-4c4f-b885-f108723f0e7b)
+
 ## Setup CI/CD with GitHub, Jenkins, Maven & Tomcat.
-• Setup Jenkins
-• Setup & Configure Maven , Git.
-• Setup Tomcat Server.
-• Integrating GitHub,Maven ,Tomcat Server with Jenkins
-• Create a CI and CD Job.
-• Test the Deployment.
+- Setup Jenkins
+- Setup & Configure Maven , Git.
+- Setup Tomcat Server.
+- Integrating GitHub,Maven ,Tomcat Server with Jenkins
+- Create a CI and CD Job.
+- Test the Deployment.
 
 ## Jenkins Stages:
 To set up a Jenkins pipeline that performs the following actions:
-**Checkout Code from GitHub**: Automatically triggers when a change is pushed to GitHub.
-**Build with Maven**: Compiles and packages the code.
-**Deploy on Tomcat**: Deploys the resulting .war file to a Tomcat server.
+- **Checkout Code from GitHub**: Automatically triggers when a change is pushed to GitHub.
+- **Build with Maven**: Compiles and packages the code.
+- **Deploy on Tomcat**: Deploys the resulting .war file to a Tomcat server.
 
 ## Prerequisites
 
@@ -30,6 +32,7 @@ To set up a Jenkins pipeline that performs the following actions:
 - **Pipeline: Utility Steps Plugin** : it provides the findFiles step.
 
 ## Set Environment Variables:
+
     ```
     GIT_REPO = 'https://github.com/your-repo.git'               // Replace with your GitHub repository URL
     BRANCH = 'main'                                             // Replace with the branch you want to build
